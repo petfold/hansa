@@ -21,7 +21,7 @@ def test_b1_import_is_offline_and_dependency_free():
 
 
 @pytest.mark.parametrize("sibling", ["loopmarket", "factbond"])
-def test_b2_siblings_never_import_assurance(sibling):
+def test_b2_siblings_never_import_hansa(sibling):
     root = pathlib.Path(__file__).resolve().parents[2] / sibling / "src"
     if not root.exists():
         pytest.skip(f"{sibling} checkout not beside this repository")
