@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hansa"
+version = "0.0.1"
+description = "Credentials, cover and identity binding for the loopmarket / factbond / ontodag stack: statements a market gate reads, registers, adapters, and the insurer's product layer"
+readme = "README.md"
+license = { text = "BSD-3-Clause" }
+requires-python = ">=3.11"
+keywords = ["credentials", "verifiable-credentials", "insurance", "mutual", "surety", "marketplace", "ontology", "swarm", "web3"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "loopmarket>=0.12.0",   # the statement and claim shapes, the gate, the escrow
+    "factbond>=0.1.0",     # assertions, adjudication, the calibration ledger
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
