@@ -34,7 +34,7 @@ commitment expressible, checkable and cheap to offer:
   retention, watching and notice duty, graduated sanctions; and the rules
   of the first pooled form, a mutual on factbond's reserve.
 
-**Status: created 2026-09-25 from `docs/CHARTER.md`; no code yet.** The
+**Status: created 2026-09-25 from `docs/CHARTER.md`; A0 built 2026-09-29** — the attester adapter and possession/photo binding, the dentist case passing loopmarket's counterparty gate on memory stores (`tests/test_a0.py`; needs loopmarket's main branch until its next release). The
 name is the Hanseatic league's: merchants admitted by their towns, vouched
 for, disciplined by expulsion, trading under their own law (the drafts'
 working name was *assurance*). The

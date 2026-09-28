@@ -341,7 +341,7 @@ Reputation without a platform and without wash trades.
 
 | Phase | Deliverable | Gate |
 |---|---|---|
-| A0 | repo, statement shape shared with loopmarket's R1, attester adapter, possession + photo binding | the dentist case end to end on memory stores: attester statement, `cred/` sidecar, loopmarket gate passes; revoked in the attester's register ⇒ refused |
+| A0 | repo, statement shape shared with loopmarket's R1, attester adapter, possession + photo binding | the dentist case end to end on memory stores: attester statement, `cred/` sidecar, loopmarket gate passes; revoked in the attester's register ⇒ refused — *met 2026-09-29 (`tests/test_a0.py`); the dentist is his own maker here, the practice form waits for loopmarket's R7* |
 | A1 | registers as a service + external mirrors (one national licence lookup, one stolen-goods register) | a heartbeat lapse makes statements meet nothing; a mirror snapshot pinned and re-verified |
 | A2 | vocabulary pack (ESCO subset, Annex V, evidence basis, binding levels) | the pack loads into ontodag; recognition edges order as expected |
 | A3 | cover toolkit on fully collateralised escrow: title fact cover, licence-validity fact cover with retention, presentation, certificate-final inspection | the buyer asserts "no title as of D", the insurer disputes, a certified claim pays net of the giver's reservation after assignment; a false presentation reduces the payout; a claim on an attribute the inspector certified runs against the inspector; revocation-gap harm paid, then recovered from the retention |

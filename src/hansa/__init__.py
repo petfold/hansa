@@ -1,9 +1,11 @@
 """hansa: credentials, cover and identity binding for the loopmarket /
 factbond / ontodag stack.
 
-Nothing is implemented yet. The charter is ``docs/CHARTER.md``; the first gate
-is A0 (a practice's attested statement about a dentist's key, in the maker's
-``cred/`` sidecar, passing loopmarket's counterparty gate on memory stores).
+The charter is ``docs/CHARTER.md``. A0 (2026-09-29): ``hansa.attester`` (the
+attester adapter: statements in loopmarket's one shape, issued in the
+attester's own register, a signed presentation) and ``hansa.binding``
+(possession and photo at the door). Submodules import loopmarket; this
+package itself imports nothing (B1).
 """
 
 __version__ = "0.0.1"
