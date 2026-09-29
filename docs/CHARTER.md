@@ -153,6 +153,25 @@ names, each a witness type in loopmarket's roster:
 3. `door-at-least-proximity` — NFC or Bluetooth distance bounding against a
    live relay.
 
+*(2026-09-29, Peter: a face resolves to a legal identity almost anywhere
+now — loopmarket THREATS T19)* **Possession is the default.** A photo
+disclosed at the door gives the counterparty a provable link from the face
+to K and K's whole history, so the handover app asks for possession unless
+the requirement names the photo, and says what the photo reveals before it
+is shown. Planned: a display-only photo form (shown on the holder's own
+device, only the counterparty's "matches" recorded — less verifiable, more
+private), and keys per trade with credentials presented unlinkably across
+them.
+
+**Identity escrow on a ruling** *(planned, 2026-09-29)*. Everything a
+deposit covers is resolved about keys; a loss beyond any deposit (fraud,
+injury, a criminal matter) needs a legal person. The attester who checked
+the government document when it bound K keeps the key-to-person link and
+discloses it only on a ruling or a court order that names K — the one
+place hansa bridges keys to legal identity, and only when a maker required
+an `identity-verified` statement from an attester it accepts (loopmarket's
+protocol never requires one).
+
 **Issuance sources** — how K was bound to the person when the statement was
 issued; a *set* the requirer accepts, since these are sources, not levels:
 
