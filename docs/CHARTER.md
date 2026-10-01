@@ -347,16 +347,16 @@ are factbond's (M5, deferred 2026-10-01 until a pooled-cover need appears).
 ### F. The personalised trust score (open decision 8 of the chat)
 
 *(2026-10-01, Peter: loopmarket's default resolver is now one named
-adjudicator both sides accept, final, chosen by reputation or
-accreditation.)* An adjudicator's reputation cannot be its parties'
+arbitrator both sides accept, final, chosen by reputation or
+accreditation.)* An arbitrator's reputation cannot be its parties'
 satisfaction (the winner is always satisfied, the loser almost never) nor any
 count (puppet trades manufacture counts). What the protocol reads is named
 identity and accreditation; what a client may fold into a *personal* score,
 and what services here may offer, are the signals that do not depend on who
-won: a maker's own and trusted makers' choices of an adjudicator before the
+won: a maker's own and trusted makers' choices of an arbitrator before the
 dispute (strongest when one who lost under it names it again), reasons read
 by peers (published or sampled rulings, redacted or by consent), losers'
-judgements of the process compared across adjudicators, and spot
+judgements of the process compared across arbitrators, and spot
 re-adjudication of a sample as an audit (loopmarket `counterparty-gate.md`
 §7a). The deferral below stands for a score the protocol reads; these are
 inputs to a client's own view.
