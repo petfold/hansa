@@ -313,6 +313,37 @@ exchanges, the Hanse and Nexus Mutual:
    members' trades outside it; "member of mutual M" is a wanter's optional
    requirement, never a market-wide one.
 
+**How a mutual plugs in — as a maker, never as code the protocol runs**
+*(Peter's question, 2026-10-01: mutuals' rules vary a lot, so should they
+be a plugin, maybe maker-supplied, with a basic one provided later?)*
+Code supplied by makers and run by loopmarket's gate or clearing is
+refused: clearing must reach the same verdict on every replica (U6),
+re-derive everything from scratch (U3) and stay bounded in cost, and a
+counterparty can judge a declaration but not a program. A mutual needs
+none of that, because it is an insurer its members own, and each of its
+rules lands on an interface the stack already has or is its own business:
+
+| rule | where it lives |
+|---|---|
+| membership, admission by survey and vouch (1) | statements in the mutual's own register (loopmarket's `register issue`, `cred present`) |
+| cover for a member | the mutual's cover gives, their deposits held by loopmarket's escrow |
+| the order of recourse (3) | the escrow's: cover *covers* the member's reservation, with assignment and netting (loopmarket's taxi case, D-2) |
+| the claims committee (6) | the resolver: a committee contract a member's want accepts by property |
+| "member of mutual M" (8) | a want requiring a membership statement |
+| vouching pay, contributions, sanctions, member voice (2, 4, 5, 7) | the mutual's own contract or software — its internal business, like a maker's pricing |
+
+That is the escrow's own pattern, "a smart contract as a maker": the rules
+are the mutual's code, and it touches the protocol only through offers,
+deposits, statements and resolvers. **A basic mutual, when wanted, belongs
+here** as a reference implementation — a pool contract and a charter record
+in factbond's policy-as-data style — which mutuals fork and wanters may
+accept by its hash, as E3's `scheme` names a check procedure. **One protocol
+gap it would expose, loopmarket's:** a deposit sits behind one offer and a
+cover give is taken whole by one leg, so today each policy is its own offer
+with its own deposit; one deposit backing many policies is the change pooled
+cover needs (loopmarket ROADMAP). The reserve's sizing and the simulation
+are factbond's (M5, deferred 2026-10-01 until a pooled-cover need appears).
+
 ### F. The personalised trust score (open decision 8 of the chat)
 
 *(corrected 2026-09-25)* Deferred by plan D9: not in this charter's first
