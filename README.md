@@ -34,7 +34,7 @@ commitment expressible, checkable and cheap to offer:
   retention, watching and notice duty, graduated sanctions; and the rules
   of the first pooled form, a mutual on factbond's reserve.
 
-**Status: created 2026-09-25 from `docs/CHARTER.md`; A0 built 2026-09-29** — the attester adapter and possession/photo binding, the dentist case passing loopmarket's counterparty gate on memory stores (`tests/test_a0.py`; needs loopmarket's main branch until its next release). The
+**Status: created 2026-09-25 from `docs/CHARTER.md`; A0 built 2026-09-29** — the attester adapter and possession/photo binding, the dentist case passing loopmarket's counterparty gate on memory stores (`tests/test_a0.py`; loopmarket 0.13.0). The
 name is the Hanseatic league's: merchants admitted by their towns, vouched
 for, disciplined by expulsion, trading under their own law (the drafts'
 working name was *assurance*). The
@@ -49,7 +49,7 @@ cross-repository plan this repo was created under is
 against is loopmarket's `docs/plans/commercial-practice-review.md`.
 
 ```
-hansa  →  loopmarket (>=0.12.0)  →  ontodag  →  recordstore  →  Swarm (optional)
+hansa  →  loopmarket (>=0.13.0)  →  ontodag  →  recordstore  →  Swarm (optional)
            →  factbond (0.1.0)
 ```
 
